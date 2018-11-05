@@ -1,0 +1,27 @@
+{
+  "name": "node_backend_server",
+  "version": "0.0.1",
+  "description": "sampe node backend server for security work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "tsoa routes && tsc -p .",
+    "build": "tsoa routes && tsc -p .",
+    "lint": "./node_modules/.bin/eslint *.js",
+    "start": "node server.js"
+  },
+  "author": "varun dave (varun.s.dave.public@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.0",
+    "@types/method-override": "0.0.31",
+    "body-parser": "^1.18.3",
+    "cors": "2.8.4",
+    "eslint": "^5.8.0",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0",
+    "tsoa": "2.2.5",
+    "typescript": "^3.1.6"
+  }
+}
